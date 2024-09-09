@@ -31,13 +31,9 @@ jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
-    container:
-      image: ubuntu:22.04
     env:
       HUGO_VERSION: 0.128.0
     steps:
-      - name: Install dependencies
-        run: apt-get update && apt-get install -y wget
 
       - name: Install Hugo CLI
         run: |
@@ -45,10 +41,14 @@ jobs:
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb
 
       - name: Install Dart Sass
-        run: snap install dart-sass
+        run: sudo snap install dart-sass
 
       - name: Install Postcss CLI
-        run: npm install postcss-cli
+        run: sudo npm install postcss-cli
+
+      - name: Chown user
+        run: |
+          sudo chown -R $USER:$USER $GITHUB_WORKSPACE
 
       - name: Checkout
         uses: actions/checkout@v4
