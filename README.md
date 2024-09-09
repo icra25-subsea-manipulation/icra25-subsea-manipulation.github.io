@@ -4,10 +4,10 @@
 
 This is the source for the (proposed) Workshop on Subsea Manipulation for [ICRA 2025](https://2025.ieee-icra.org/) in Atlanta.
 
-It is built using 
+It is built using
 [Docsy](https://www.docsy.dev/) is a [Hugo](https://gohugo.io/) theme module for technical documentation sites.
 
-This website is hosted on [Github Pages](https://pages.github.com/) and is automatically deployed by [Github Actions](https://docs.github.com/en/actions). 
+This website is hosted on [Github Pages](https://pages.github.com/) and is automatically deployed by [Github Actions](https://docs.github.com/en/actions).
 
 # Development
 
