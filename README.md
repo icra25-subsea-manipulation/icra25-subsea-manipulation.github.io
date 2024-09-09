@@ -1,6 +1,6 @@
 # Website for ICRA 2025 Workshop on Subsea Manipulation
 
-**[https://icra25-subsea-manipulation-ws.github.io/](https://icra25-subsea-manipulation-ws.github.io/)**
+**[https://icra25-subsea-manipulation.github.io/](https://icra25-subsea-manipulation.github.io/)**
 
 This is the source for the (proposed) Workshop on Subsea Manipulation for [ICRA 2025](https://2025.ieee-icra.org/) in Atlanta.
 
