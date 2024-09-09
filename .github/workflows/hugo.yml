@@ -37,7 +37,7 @@ jobs:
       HUGO_VERSION: 0.128.0
     steps:
       - name: Install dependencies
-        run: apt-get install -y wget
+        run: apt-get update && apt-get install -y wget
 
       - name: Install Hugo CLI
         run: |
