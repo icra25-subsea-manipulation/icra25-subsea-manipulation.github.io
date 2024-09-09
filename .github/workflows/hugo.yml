@@ -43,9 +43,8 @@ jobs:
       - name: Install Dart Sass
         run: sudo snap install dart-sass
 
-      - name: Install Postcss CLI
-        run: sudo npm install postcss-cli
-
+      # I believe this issue is due to recent Ubuntu images defaulting to a non-root
+      # user, but the github workspace is owned by root
       - name: Chown user
         run: |
           sudo chown -R $USER:$USER $GITHUB_WORKSPACE

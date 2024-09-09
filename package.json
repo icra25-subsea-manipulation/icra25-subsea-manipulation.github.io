@@ -5,7 +5,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.14",
     "cross-env": "^7.0.3",
-    "hugo-extended": "0.133.0",
+    "hugo-extended": "0.134.1",
     "postcss-cli": "^11.0.0"
   },
   "homepage": "https://example.docsy.dev",
@@ -40,17 +40,6 @@
     "test": "npm run check:links",
     "update:dep": "npm install --save-dev autoprefixer@latest postcss-cli@latest",
     "update:hugo": "npm install --save-dev --save-exact hugo-extended@latest"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.14",
-    "cross-env": "^7.0.3",
-    "hugo-extended": "0.134.1",
-    "postcss-cli": "^11.0.0"
-  },
-  "private": true,
-  "prettier": {
-    "proseWrap": "always",
-    "singleQuote": true
   },
   "spelling": "cSpell:ignore docsy hugo htmltest precheck postbuild -",
   "version": "0.10.0",
