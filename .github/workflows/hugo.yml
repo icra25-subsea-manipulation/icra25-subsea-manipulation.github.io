@@ -37,7 +37,7 @@ jobs:
       HUGO_VERSION: 0.128.0
     steps:
       - name: Install dependencies
-        run: sudo apt-get install -y wget
+        run: apt-get install -y wget
 
       - name: Install Hugo CLI
         run: |
@@ -45,10 +45,10 @@ jobs:
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb
 
       - name: Install Dart Sass
-        run: sudo snap install dart-sass
+        run: snap install dart-sass
 
       - name: Install Postcss CLI
-        run: sudo npm install postcss-cli
+        run: npm install postcss-cli
 
       - name: Checkout
         uses: actions/checkout@v4
