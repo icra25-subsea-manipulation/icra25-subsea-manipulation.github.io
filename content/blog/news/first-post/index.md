@@ -1,6 +1,6 @@
 ---
 date: 2018-10-06
-title: Easy documentation with Docsy
+title: First post
 linkTitle: Announcing Docsy
 description: >
   The Docsy Hugo theme lets project maintainers and contributors focus on content,

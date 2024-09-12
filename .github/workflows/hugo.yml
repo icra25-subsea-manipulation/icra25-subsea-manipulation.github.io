@@ -43,9 +43,9 @@ jobs:
       - name: Install Dart Sass
         run: sudo snap install dart-sass
 
-      # I believe this issue is due to recent Ubuntu images defaulting to a non-root
-      # user, but the github workspace is owned by root
-      - name: Chown user
+      # I believe this is required is due to recent Ubuntu distro images
+      # defaulting to a non-root user, but the github workspace is owned by root?
+      - name: Chown github workspace
         run: |
           sudo chown -R $USER:$USER $GITHUB_WORKSPACE
 
@@ -53,6 +53,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
+          lfs: 'true'
 
       - name: Setup Pages
         id: pages
@@ -72,6 +73,7 @@ jobs:
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
+        if: github.ref == 'refs/heads/main'
         with:
           path: ./public
 

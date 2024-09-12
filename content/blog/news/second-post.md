@@ -1,5 +1,5 @@
 ---
-title: Second blog post
+title: Sample news
 date: 2018-10-06
 description: >
   A short lead description about this content page. Text here can also be
