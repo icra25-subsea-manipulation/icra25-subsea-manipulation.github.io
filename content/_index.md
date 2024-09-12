@@ -16,22 +16,27 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque commodo ne
 {{% /blocks/lead %}}
 
 
+{{% blocks/section color="light" %}}
+
+<p class="lead">Organizers:<p>
+
+* Corina Barbalata, Lousiana State University
+* Joseph Davidson, Oregon State University
+* Aaron Marburg, University of Washington Applied Physics Laboratory
+
+{{% /blocks/section %}}
+
+
 {{% blocks/section color="dark" type="row" %}}
-{{% blocks/feature icon="fa-lightbulb" title="New chair metrics!" %}}
-The Goldydocs UI now shows chair size metrics by default.
-
-Please follow this space for updates!
+{{% blocks/feature icon="fa-lightbulb" title="More information!" %}}
+Contact the organizers for more information
 {{% /blocks/feature %}}
 
-
-{{% blocks/feature icon="fab fa-github" title="Contributions welcome!" url="https://github.com/google/docsy-example" %}}
-We do a [Pull Request](https://github.com/google/docsy-example/pulls) contributions workflow on **GitHub**. New users are always welcome!
-{{% /blocks/feature %}}
+{{% /blocks/section %}}
 
 
-{{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!" url="https://twitter.com/docsydocs" %}}
-For announcement of latest features etc.
-{{% /blocks/feature %}}
+{{% blocks/section color="light" type="row" %}}
 
+Header image: National Oceanic and Atmospheric Administration under Attribution 2.0 Generic license.
 
 {{% /blocks/section %}}
